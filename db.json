@@ -1,0 +1,69 @@
+{
+    "clients": [
+      {
+        "idc": 1,
+        "nom": "Ngom",
+        "prenom": "Modou",
+        "telephone": "771234",
+        "adresse": "Fass",
+        "email": "modou@gmail.com",
+        "photo": "modou.png"
+      }
+    ],
+    "articles": [
+      {
+        "ida": 1,
+        "libelle": "Riz",
+        "quantiteEnStock": 50,
+        "prix": 15000
+      },
+      {
+        "ida": 2,
+        "libelle": "huile",
+        "quantiteEnStock": 25,
+        "prix": 7000
+      },
+      {
+        "ida": 3,
+        "libelle": "Sucre",
+        "quantiteEnStock": 50,
+        "prix": 10000
+      },
+      
+      {
+        "ida": 3,
+        "libelle": "lait",
+        "quantiteEnStock": 50,
+        "prix": 3000
+      }
+    ],
+    "dettes": [
+      {
+        "idd": 1,
+        "idc": 1,
+        "ida": 2,
+        "quantite": 2,
+        "montantTotal": 10000,
+        "montantVerse": 5000
+      },
+      {
+        "idd": 2,
+        "idc": 2,
+        "articleId": 1,
+        "quantite": 1,
+        "montantTotal": 7500
+      }
+    ],
+    
+    "paiement": [
+      {
+        "idp": 1,
+        "idc": 1,
+        "idd": 2,
+        "quantite": 2,
+        "montantPaiment": 10000
+      }
+      
+    ]
+    
+  }
