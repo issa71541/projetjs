@@ -2,11 +2,11 @@
     "clients": [
       {
         "idc": 1,
-        "nom": "Ngom",
-        "prenom": "Modou",
+        "nom": "Kane",
+        "prenom": "Soukeye",
         "telephone": "771234",
         "adresse": "Fass",
-        "email": "modou@gmail.com",
+        "email": "Soukeye@gmail.com",
         "photo": "modou.png"
       }
     ],
@@ -19,7 +19,7 @@
       },
       {
         "ida": 2,
-        "libelle": "huile",
+        "libelle": "huile", 
         "quantiteEnStock": 25,
         "prix": 7000
       },
@@ -29,13 +29,27 @@
         "quantiteEnStock": 50,
         "prix": 10000
       },
-      
+
       {
-        "ida": 3,
+        "ida":4 ,
         "libelle": "lait",
         "quantiteEnStock": 50,
         "prix": 3000
-      }
+      } ,
+
+      {
+        "ida":5 ,
+        "libelle": "savon",
+        "quantiteEnStock": 100,
+        "prix": 300
+      } ,
+
+      {
+        "ida":6,
+        "libelle": "oignon",
+        "quantiteEnStock": 50,
+        "prix": 13000
+      } 
     ],
     "dettes": [
       {

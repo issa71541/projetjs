@@ -20,97 +20,9 @@
 <body class="bg-gray-100">
     <div class="flex flex-col md:flex-row">
      
-        <div class="sidebar" id="sidebar">
-            <div class="p-4 flex items-center h-32 logo ">
-                <svg class="w-20 h-20 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="24" rx="4" fill="white" />
-                    <path
-                        d="M17 8H7C5.89543 8 5 8.89543 5 10V16C5 17.1046 5.89543 18 7 18H17C18.1046 18 19 17.1046 19 16V10C19 8.89543 18.1046 8 17 8Z"
-                        stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11C11 11.5523 11.4477 12 12 12Z"
-                        stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M16 16H8" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-                <div class="flex flex-col text-white font-bold text-xl">
-                    <span id="gest">GESTION</span>
-                    <span>BOUTIQUE</span>
-                </div>
-            </div>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-tachometer-alt text-lg mr-3"></i> Dashboard</a>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-dollar-sign text-lg mr-3"></i> Dettes
-            </a>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-users text-lg mr-3"></i> Clients
-            </a>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-box text-lg mr-3"></i> Articles
-            </a>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-envelope text-lg mr-3"></i> Demandes
-            </a>
-            <a class="block px-4 py-2 mt-2 text-sm font-semibold text-white hover:bg-gray-600"
-                href=""><i class="fas fa-user text-lg mr-3"></i> Utilisateurs
-            </a>
-        </div>
       
         <div class="content">
-            <header class="flex flex-col sm:flex-row justify-between items-center bg-white shadow-md px-4 py-2 header ml-5">
-                <div class="p-4 flex items-center h-32 md:hidden">
-                    <svg class="w-20 h-20 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="40" height="24" rx="4" fill="white" />
-                        <path
-                            d="M17 8H7C5.89543 8 5 8.89543 5 10V16C5 17.1046 5.89543 18 7 18H17C18.1046 18 19 17.1046 19 16V10C19 8.89543 18.1046 8 17 8Z"
-                            stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11C11 11.5523 11.4477 12 12 12Z"
-                            stroke="#1E40AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M16 16H8" stroke="#1E40AF" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    <div class="flex flex-col text-gray-800 font-bold text-xl">
-                        <span>GESTION</span>
-                        <span>BOUTIQUE</span>
-                    </div>
-                </div>
-               
-                <div class="search-bar flex items-center w-full sm:w-1/2 lg:w-3/5 mb-2 sm:mb-0">
-                    <input type="text" placeholder="Rechercher dans votre boutique..."
-                        class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-sm sm:text-base" />
-                </div>
-
-                <!-- Informations utilisateur -->
-                <button class="header-user flex items-center mt-2 sm:mt-0" data-popover-target="popover-bottom"
-                    data-popover-placement="bottom" type="button" data-popover-trigger="click">
-                    <img src="" alt="Photo Utilisateur"
-                        class="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-blue-500" />
-                    <div class="pl-2 sm:pl-4 py-1 ml-2">
-                        <p class="text-gray-700 text-xs sm:text-sm font-semibold">
-                            OUSSEYNOU
-                        </p>
-                        <p class="text-gray-700 text-xs sm:text-sm font-semibold">
-                            DIEDHIOU
-                        </p>
-                    </div>
-                </button>
-
-                <div data-popover id="popover-bottom" role="tooltip"
-                    class="absolute right-2 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 invisible"
-                    style="top: 3rem">
-                    <div class="px-4 py-2 text-center">
-                        <img class="w-16 h-16 rounded-full mx-auto"
-                            src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2" alt="User avatar" />
-                        <p class="mt-2 font-semibold">OUSSEYNOU DIEDHIOU</p>
-                    </div>
-                    <a href=""
-                        class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100">MODIFIER</a>
-                    <a href=""
-                        class="block px-4 py-2 text-sm text-center text-gray-700 hover:bg-gray-100">DECONNEXION</a>
-                </div>
-            </header>
+            
             <main class="mt-8 mx-4 md:mr-8 rounded-xl bg-white p-4 shadow-sm flex flex-col main-content">
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <div class="p-4 sm:p-6 md:p-8 mb-8  bg-blue-600">
@@ -120,7 +32,7 @@
                             class="stat-card rounded-lg p-4 sm:p-6 text-white font-semibold text-lg sm:text-xl md:text-2xl flex flex-col justify-between">
                             <div class="flex flex-col justify-center space-y-4">
                                 <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-8">
-                                    <img src="Ellipse4.png" alt="User Photo" class="w-24 h-24 sm:w-32 border-2 sm:h-32 md:w-36 md:h-36 rounded-full">
+                                    <img src="fem.jpg" alt="User Photo" class="w-24 h-24 sm:w-32 border-2 sm:h-32 md:w-36 md:h-36 rounded-full">
                                     <div class="flex flex-col justify-between h-full pb-4 text-center sm:text-left">
                                         <div id="client-info">
                                             <div id="prenom">Prenom:</div>
@@ -137,34 +49,33 @@
 
                             <div
                                 class="stat-card rounded-lg p-4 sm:p-6 font-semibold text-white text-lg sm:text-xl md:text-3xl flex flex-col justify-between">
-                                <p>Montant Total: 100.000 FCFA</p>
+                                <!-- <p>Montant Total: 100.000 FCFA</p>
                                 <p>Montant Versé: 55.000 FCFA</p>
-                                <p>Montant Restant: 45.000 FCFA</p>
+                                <p>Montant Restant: 45.000 FCFA</p> -->
                             </div>
                         </div>
                     </div>
                     <div class="product-lists">
                         <div class="product-list bg-white rounded-lg shadow p-4 mb-4">
                             <h2 class="font-semibold mb-2">Lister les articles disponibles</h2>
-                            <input type="text" placeholder="Libelle" id="inpuArt" class="p-2 border rounded-lg w-full mb-2">
+                            <input type="text" placeholder="Libelle" id="inputArticle" class="p-2 border rounded-lg w-full mb-2">
                             <div class="overflow-x-auto">
-                                <table class="w-full">
-                                    <thead class="bg-blue-600 text-white">
-                                        <tr>
-                                            <th class="p-2 text-center">
-                                                <i class="fas fa-check-square"></i>
-                                            </th>
-                                            <th class="p-2">Article</th>
-                                            <th class="p-2">Prix</th>
-                                            <th class="p-2">Qte en stock</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                     
-                                      
-                                      
-                                    </tbody>
-                                </table>
+
+<div class="overflow-x-auto">
+    <table class="w-full">
+        <thead class="bg-blue-600 text-white">
+            <tr>
+                <th class="p-2 text-center"><i class="fas fa-check-square"></i></th>
+                <th class="p-2">Article</th>
+                <th class="p-2">Prix</th>
+                <th class="p-2">Qte en stock</th>
+            </tr>
+        </thead>
+        <tbody id="tBody">
+         
+        </tbody>
+    </table>
+</div>
                             </div>
                             <div class="flex justify-center mt-4">
                                 <button class="px-3 py-1 border rounded mr-1">&lt;</button>
@@ -181,7 +92,7 @@
                                 <label class="block mb-2 text-lg font-medium">Total: 40.000 FCFA</label>
                             </div>
                             <div class="overflow-x-auto">
-                                <table class="w-full">
+                                <table class="w-full mt-4">
                                     <thead class="bg-blue-600 text-white">
                                         <tr>
                                             <th class="p-2">ARTICLE</th>
@@ -191,41 +102,8 @@
                                             <th class="p-2">ACTION</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="p-2">Article 1</td>
-                                            <td class="p-2">2.000</td>
-                                            <td class="p-2">
-                                                <div class="flex items-center justify-center">
-                                                    <button class="px-2 py-1 bg-gray-200 rounded-l">-</button>
-                                                    <input type="text" value="1"
-                                                        class="w-12 text-center border-t border-b">
-                                                    <button class="px-2 py-1 bg-gray-200 rounded-r">+</button>
-                                                </div>
-                                            </td>
-                                            <td class="p-2">20.000</td>
-                                            <td><button class="text-red-500">
-                                                    <i class="fas fa-trash"></i> Supprimer
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-2">Article 2</td>
-                                            <td class="p-2">3.000</td>
-                                            <td class="p-2">
-                                                <div class="flex items-center justify-center">
-                                                    <button class="px-2 py-1 bg-gray-200 rounded-l">-</button>
-                                                    <input type="text" value="1"
-                                                        class="w-12 text-center border-t border-b">
-                                                    <button class="px-2 py-1 bg-gray-200 rounded-r">+</button>
-                                                </div>
-                                            </td>
-                                            <td class="p-2">20.000</td>
-                                            <td><button class="text-red-500">
-                                                    <i class="fas fa-trash"></i> Supprimer
-                                                </button>
-                                            </td>
-                                        </tr>
+                                    <tbody id="selectedArticles">
+                                        <!-- Articles sélectionnés -->
                                     </tbody>
                                 </table>
                             </div>
@@ -246,5 +124,4 @@
     </div>
     <script src="dette.js" ></script>
 </body>
-
 </html>
